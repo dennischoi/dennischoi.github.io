@@ -26,8 +26,8 @@ $(function(){
       $('#home').css('display', 'table')
       $('#contact-page').addClass('hide-section')
       $('#contact-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#about-page').addClass('hide-section')
+      $('#about-page').removeClass('show-section')
       // $('').addClass('hide-section')
       // $('').removeClass('show-section')
       // $('').addClass('hide-section')
@@ -42,8 +42,8 @@ $(function(){
       $('#contact-page').addClass('show-section')
       $('#contact-page').removeClass('hide-section')
       $('#home').css('display', 'none')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#about-page').addClass('hide-section')
+      $('#about-page').removeClass('show-section')
       // $('').addClass('hide-section')
       // $('').removeClass('show-section')
       // $('').addClass('hide-section')
@@ -51,6 +51,21 @@ $(function(){
 
 
     });
+
+// On Click of ABOUT ME
+
+    $('#about-click').on('click', function() {
+      $('#about-page').addClass('show-section')
+      $('#about-page').removeClass('hide-section')
+      $('#home').css('display', 'none')
+      $('#contact-page').addClass('hide-section')
+      $('#contact-page').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+
+    })
 
 
 
