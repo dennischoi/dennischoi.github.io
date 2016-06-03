@@ -26,6 +26,13 @@ $(function(){
       $('#home').css('display', 'table')
       $('#contact-page').addClass('hide-section')
       $('#contact-page').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+
 
     });
 
@@ -35,6 +42,12 @@ $(function(){
       $('#contact-page').addClass('show-section')
       $('#contact-page').removeClass('hide-section')
       $('#home').css('display', 'none')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
 
 
     });
