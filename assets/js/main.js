@@ -18,10 +18,30 @@ $(function(){
     });
 
 // SWITCHING PAGES
-  //
-  // $(document).on('ready page:load', function() {
-  //
-  // })
+
+  $(document).on('ready page:load', function() {
+
+// On Click of HOME
+    $('#home-click').on('click', function() {
+      $('#home').css('display', 'table')
+      $('#contact-page').addClass('hide-section')
+      $('#contact-page').removeClass('show-section')
+
+    });
+
+// On Click of CONTACT
+
+    $('#contact-click').on('click', function() {
+      $('#contact-page').addClass('show-section')
+      $('#contact-page').removeClass('hide-section')
+      $('#home').css('display', 'none')
+
+
+    });
+
+
+
+  });
 
 // RESPONSIVE
     function setResizeContent() {
