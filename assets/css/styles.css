@@ -1,9 +1,10 @@
-
 /*-----------------------------------------------------------------------
 
 1. GLOBAL STYLES (USED IN VARIOUS SECTION OF THE WEBSITE)
 
+
 2. COMPONENTS (ELEMENTS USED IN MANY SECTION)
+
 
 3. PRELOADER
 
@@ -34,7 +35,7 @@ body {
 
 
 /*---------------------------------------------------------------------*/
-/* TEXT COLOR
+/*  TEXT COLOR
 /*---------------------------------------------------------------------*/
 .text-grey {
   color: #a1a1a1;
@@ -44,8 +45,9 @@ body {
   color: #da491c;
 }
 
+
 /*---------------------------------------------------------------------*/
-/* ANCHOR
+/*  ANCHOR
 /*---------------------------------------------------------------------*/
 a {
   color: #fff;
@@ -65,7 +67,7 @@ a:focus {
 
 
 /*---------------------------------------------------------------------*/
-/* HEADING
+/*  HEADING
 /*---------------------------------------------------------------------*/
 h1,
 h2,
@@ -79,8 +81,8 @@ h6 {
 
 
 /*---------------------------------------------------------------------*/
-/* COMPONENTS
-/* BUTTON
+/*  COMPONENTS
+/*  BUTTON
 /*---------------------------------------------------------------------*/
 .btn.btn-custom {
   background-color: #da491c;
@@ -132,7 +134,7 @@ h6 {
 
 
 /*---------------------------------------------------------------------*/
-/* DIVIDER
+/*  DIVIDER
 /*---------------------------------------------------------------------*/
 span.divider {
   display: block;
@@ -148,9 +150,8 @@ span.divider.center {
 }
 
 
-
 /*---------------------------------------------------------------------*/
-/* PRELOADER
+/*  PRELOADER
 /*---------------------------------------------------------------------*/
 #jpreOverlay {
   background-color: #0d0c0d;
@@ -167,9 +168,8 @@ span.divider.center {
 
 
 /*---------------------------------------------------------------------*/
-/* HOME
+/*  HOME
 /*---------------------------------------------------------------------*/
-
 header.hero {
   display: table;
   position: relative;
@@ -335,6 +335,7 @@ header.hero .hero-body .hero-text .page-scroll {
   margin-top: 40px;
 }
 
+
 /*---------------------------------------------------------------------*/
 /*  5. NAVIGATION
 /*---------------------------------------------------------------------*/
@@ -377,6 +378,7 @@ header.hero .hero-body .hero-text .page-scroll {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -403,6 +405,7 @@ header.hero .hero-body .hero-text .page-scroll {
 
 .navbar.navbar-fixed-top .navbar-nav > li.active > a:hover {
   background-color: #171717;
+  color: #da491c;
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.active > a:focus {
@@ -421,7 +424,6 @@ header.hero .hero-body .hero-text .page-scroll {
 .navbar.navbar-fixed-top .navbar-nav > li.dropdown.open > a:focus {
   background-color: #171717;
 }
-
 
 .navbar.navbar-fixed-top .navbar-nav .dropdown-menu {
   min-width: 180px;
@@ -445,7 +447,6 @@ header.hero .hero-body .hero-text .page-scroll {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 .navbar.navbar-fixed-top .navbar-nav .caret {
   margin-top: -4px;
@@ -493,7 +494,7 @@ header.hero .hero-body .hero-text .page-scroll {
 /*---------------------------------------------------------------------*/
 /* 6. SECTION
 /*---------------------------------------------------------------------*/
-/* Hidden pages */
+/* Hidden Pages */
 
 .hide-section {
   display: none;
@@ -645,138 +646,188 @@ header.hero .hero-body .hero-text .page-scroll {
   background: rgba(0, 0, 0, 0.5);
 }
 
+
+/*---------------------------------------------------------------------*/
+/*  6.1. SECTION - PROFILE
+/*---------------------------------------------------------------------*/
+#profile {
+  background-color: #0d0c0d;
+}
+
+@media (min-width: 992px) {
+  #profile .section-wrapper > .section-content {
+    padding: 0px;
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  6.1.1. PROFILE TEXT
+/*---------------------------------------------------------------------*/
+#profile .profile-text {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #profile .profile-text {
+    text-align: justify;
+  }
+}
+@media (min-width: 992px) {
+  #profile .profile-text {
+    padding-top: 100px;
+  }
+}
+
+#profile .profile-text h2 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  #profile .profile-text .divider {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #profile .profile-text.padding-right-yes {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  #profile .profile-text.padding-left-yes {
+    padding-left: 20px;
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  6.1.2. CONTACT DETAILS
+/*---------------------------------------------------------------------*/
+#profile .about-details {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  #profile .about-details {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #profile .about-details {
+    padding-bottom: 100px;
+  }
+}
+
+#profile .about-details h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #profile .about-details h4 {
+    font-size: 22px;
+  }
+}
+
+#profile .about-details ul.list-unstyled > li {
+  padding: 2px 0px;
+  font-size: 16px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #profile .about-details ul.list-unstyled > li {
+    padding: 5px 0px;
+    font-size: 20px;
+  }
+}
+
+#profile .about-details a.btn-custom {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #profile .about-details a.btn-custom {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  #profile .about-details.padding-right-yes {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  #profile .about-details.padding-left-yes {
+    padding-left: 20px;
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  6.1.3. PROFILE PICTURE
+/*---------------------------------------------------------------------*/
+#profile .pp-wrapper {
+  position: relative;
+}
+
+#profile .pp-wrapper .profile-picture h4 {
+  text-transform: uppercase;
+}
+
+#profile .pp-wrapper .profile-picture.style-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#profile .pp-wrapper .profile-picture.style-two img {
+  margin-top: 100px;
+}
+
+#profile .pp-wrapper .profile-picture.style-two .title {
+  display: block;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: #2e2e2e;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
 /*---------------------------------------------------------------------*/
 /*  6.12. SECTION - CONTACT
 /*---------------------------------------------------------------------*/
 #contact {
-  /*background-color: #0d0c0d;*/
-}
-
-
-/*---------------------------------------------------------------------*/
-/*  6.12.1. CONTACT FORM
-/*---------------------------------------------------------------------*/
-#contact .contact-form {
-  margin-top: 40px;
-}
-
-#contact .contact-form .form-group {
-  margin-bottom: 20px;
-}
-
-#contact .contact-form .form-group label {
-  color: #a1a1a1;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-#contact .contact-form .form-group label.error {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-#contact .contact-form .form-group .input-group {
-  width: 100%;
-}
-
-#contact .contact-form .form-group .input-group input {
-  padding: 0;
-  background-color: transparent;
-  color: #a1a1a1;
-  font-size: 16px;
-  border: none;
-  border-bottom: 1px solid #3b3b3b;
-  border-radius: 0px;
-}
-
-#contact .contact-form .form-group .input-group input:focus {
-  box-shadow: none;
-}
-
-#contact .contact-form .form-group .input-group textarea {
-  margin-bottom: 10px;
-  padding: 0;
-  height: 250px;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
-  border-bottom: 1px solid #3b3b3b;
-  border-radius: 0px;
-}
-
-#contact .contact-form .form-group .input-group textarea:focus {
-  box-shadow: none;
-}
-
-/* WebKit browsers */
-#contact .contact-form .form-group .input-group ::-webkit-input-placeholder {
-  color: #a1a1a1;
-}
-
-/* Firefox 4 to 18 */
-#contact .contact-form .form-group .input-group :-moz-placeholder {
-  color: #a1a1a1;
-  opacity: 1;
-}
-
-/* Firefox 19+ */
-#contact .contact-form .form-group .input-group ::-moz-placeholder {
-  color: #a1a1a1;
-  opacity: 1;
-}
-
-/* IE 10+ */
-#contact .contact-form .form-group .input-group :-ms-input-placeholder {
-  color: #a1a1a1;
-}
-
-#contact .contact-form .form-group button {
-  margin-top: 5px;
-  padding: 0;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background-color: #212121;
-  color: #a1a1a1;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: none;
-  outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-#contact .contact-form .form-group button:hover {
-  color: #ffffff;
-}
-
-#contact .contact-form .form-group button:focus {
-  box-shadow: none;
+  background-color: #0d0c0d;
 }
 
 
 /*---------------------------------------------------------------------*/
 /*  6.12.2. CONTACT DETAILS
 /*---------------------------------------------------------------------*/
-#contact .contact-details {
+#contact .about-details {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-#contact .contact-details .speech-bubble {
+#contact .about-details .speech-bubble {
   position: relative;
   width: 170px;
   height: 170px;
   margin: auto;
 }
 
-#contact .contact-details .speech-bubble > i {
+#contact .about-details .speech-bubble > i {
   display: block;
   position: absolute;
   z-index: 5;
@@ -784,7 +835,7 @@ header.hero .hero-body .hero-text .page-scroll {
   font-size: 170px;
 }
 
-#contact .contact-details .speech-bubble h4 {
+#contact .about-details .speech-bubble h4 {
   padding-top: 50px;
   font-size: 30px;
   font-weight: 700;
@@ -793,18 +844,18 @@ header.hero .hero-body .hero-text .page-scroll {
   letter-spacing: 1px;
 }
 
-#contact .contact-details h2 {
+#contact .about-details h2 {
   margin-top: 20px;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-#contact .contact-details h4 {
+#contact .about-details h4 {
   margin-top: 10px;
 }
 
-#contact .contact-details span.divider {
+#contact .about-details span.divider {
   margin-bottom: 20px;
   width: 60px;
   height: 4px;
