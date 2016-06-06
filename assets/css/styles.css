@@ -339,6 +339,7 @@ header.hero .hero-body .hero-text .page-scroll {
 /*---------------------------------------------------------------------*/
 /*  5. NAVIGATION
 /*---------------------------------------------------------------------*/
+
 .navbar.navbar-fixed-top {
   margin: 0;
   border: 0;
@@ -584,67 +585,7 @@ header.hero .hero-body .hero-text .page-scroll {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.section.parallax-yes > .parallax {
-  width: 100%;
-  height: 100%;
-}
 
-.section.parallax-yes > .parallax > .bcg {
-  display: table;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-@media (min-width: 1280px) {
-  .section.parallax-yes > .parallax > .bcg {
-    background-attachment: fixed;
-  }
-}
-
-.section.parallax-yes .container-fluid.section-wrapper {
-  position: relative;
-}
-
-.section.parallax-yes .container-fluid.section-wrapper > .section-content {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .section.parallax-yes .container-fluid.section-wrapper > .section-content {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .section.parallax-yes .container-fluid.section-wrapper > .section-content {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section.parallax-yes .container-fluid.section-wrapper > .section-content {
-    width: 1170px;
-  }
-}
-
-.section.parallax-yes .container-fluid.section-wrapper > .section-content:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
 
 
 /*---------------------------------------------------------------------*/
