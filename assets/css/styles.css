@@ -351,6 +351,8 @@ header.hero .hero-body .hero-text .page-scroll {
 
 @media (min-width: 992px) {
   .navbar.navbar-fixed-top {
+    /* If I want to add small footer use fixed */
+    /*position: fixed;*/
     position: relative;
   }
 }
