@@ -28,8 +28,8 @@ $(function(){
       $('#contact-page').removeClass('show-section')
       $('#about-page').addClass('hide-section')
       $('#about-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#skills-page').addClass('hide-section')
+      $('#skills-page').removeClass('show-section')
       // $('').addClass('hide-section')
       // $('').removeClass('show-section')
 
@@ -45,8 +45,8 @@ $(function(){
       $('#home').css('display', 'none')
       $('#about-page').addClass('hide-section')
       $('#about-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#skills-page').addClass('hide-section')
+      $('#skills-page').removeClass('show-section')
       // $('').addClass('hide-section')
       // $('').removeClass('show-section')
 
@@ -61,14 +61,27 @@ $(function(){
       $('#home').css('display', 'none')
       $('#contact-page').addClass('hide-section')
       $('#contact-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#skills-page').addClass('hide-section')
+      $('#skills-page').removeClass('show-section')
       // $('').addClass('hide-section')
       // $('').removeClass('show-section')
 
     })
 
+// On Click of SKILLS
 
+    $('#skill-click').on('click', function() {
+      $('#skills-page').addClass('show-section')
+      $('#skills-page').removeClass('hide-section')
+      $('#home').css('display', 'none')
+      $('#contact-page').addClass('hide-section')
+      $('#contact-page').removeClass('show-section')
+      $('#about-page').addClass('hide-section')
+      $('#about-page').removeClass('show-section')
+      // $('').addClass('hide-section')
+      // $('').removeClass('show-section')
+
+    })
 
   });
 
