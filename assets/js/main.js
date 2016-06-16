@@ -141,4 +141,35 @@ $(function(){
     });
 
 
+
+
+// CIRCLE CHART
+  var circleChart = function (){
+      $('.circle-chart').find('.item-progress').each(function(){
+          var item = $(this),
+          maxHeight = 108,
+          newHeight = maxHeight * ($(this).data('percent') / 100);
+
+          // Only animate elements when using non-mobile devices
+          // if (jQuery.browser.mobile === false){
+          //     item.one('inview', function(isInView) {
+          //         if (isInView){
+          //             // Animate item
+          //             item.animate({
+          //                 height: newHeight
+          //             },1500);
+          //         }
+          //     });
+          // }
+          // else{
+          //     item.css('height', newHeight);
+          // }
+      });
+  };
+
+// Call circleChart() when window is loaded.
+  $(window).smartload(function(){
+      circleChart();
+  });
+
 });
