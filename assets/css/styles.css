@@ -891,3 +891,227 @@ header.hero .hero-body .hero-text .page-scroll {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+
+/*---------------------------------------------------------------------*/
+/* PORTFOLIO
+/*---------------------------------------------------------------------*/
+#portfolio {
+  position: relative;
+  z-index: 5;
+  background-color: #171717;
+}
+
+#portfolio .section-wrapper > .section-content {
+  padding-bottom: 0px;
+}
+
+.portfolio {
+  margin-top: 30px;
+}
+
+.portfolio .item {
+  position: relative;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.portfolio .item > .project-wrapper {
+  position: relative;
+  z-index: 5;
+}
+
+.portfolio .item > .project-wrapper:before {
+  position: absolute;
+  z-index: 10;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio .item > .project-wrapper:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio .item > .project-wrapper:hover > .project-link {
+  opacity: 0.9;
+}
+
+.portfolio .item > .project-wrapper:hover > .project-link > a.zoom {
+  left: 0;
+}
+
+.portfolio .item > .project-wrapper:hover > .project-link > a.external-link {
+  left: 40px;
+}
+
+.portfolio .item > .project-wrapper:hover > .project-title > h4 {
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.portfolio .item > .project-wrapper > .project-link {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  width: 88px;
+  height: 48px;
+  margin-top: -48px;
+  margin-left: -44px;
+  opacity: 0;
+}
+
+.portfolio .item > .project-wrapper > .project-link > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.portfolio .item > .project-wrapper > .project-link > a.zoom {
+  left: 40px;
+  background-color: #2e2e2e;
+}
+
+.portfolio .item > .project-wrapper > .project-link > a.external-link {
+  left: 0;
+  background-color: #c80a48;
+}
+
+.portfolio .item > .project-wrapper > .project-title > h4 {
+  display: block;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  margin-top: -48px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.filterable-portfolio-nav {
+  margin: 30px 0px 5px;
+}
+
+@media (max-width: 599px) {
+  .filterable-portfolio-nav a {
+    margin-bottom: 15px;
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/* MAGNIFIC POP UP CUSTOM
+/*---------------------------------------------------------------------*/
+.mfp-bg {
+  background-color: #0d0c0d;
+}
+
+button.mfp-arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: 60px;
+  line-height: 20px;
+  margin-top: -30px;
+}
+
+button.mfp-arrow:active {
+  margin-top: -30px;
+}
+
+.mfp-arrow-left:before {
+  border-right: none;
+  margin: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  line-height: 20px;
+  margin-top: -30px;
+  content: '\ea26';
+  font-family: 'icomoon';
+  font-size: 50px;
+}
+
+.mfp-arrow-left:after {
+  border-right: none;
+}
+
+.mfp-arrow-right:before {
+  border-left: none;
+  margin: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  line-height: 20px;
+  margin-top: -30px;
+  content: '\ebf9';
+  font-family: 'icomoon';
+  font-size: 50px;
+}
+
+.mfp-arrow-right:after {
+  border-left: none;
+}
+
+
+/*---------------------------------------------------------------------*/
+/* MAGNIFIC POP CUSTOM - FADE EFFECT
+/*---------------------------------------------------------------------*/
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
