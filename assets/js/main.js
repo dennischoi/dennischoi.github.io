@@ -155,7 +155,28 @@ $(function(){
     });
 
 
+// Magnific popup
+    if ($.fn.magnificPopup){
+        $('.portfolio').magnificPopup({
+            delegate: 'a.zoom',
+            type: 'image',
+            fixedContentPos: false,
 
+            // Delay in milliseconds before popup is removed
+            removalDelay: 300,
+
+            // Class that is added to popup wrapper and background
+            mainClass: 'mfp-fade',
+
+            gallery: {
+                enabled: true,
+                preload: [0,2],
+                arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+                tPrev: 'Previous Project',
+                tNext: 'Next Project'
+            }
+        });
+    }
 
 // CIRCLE CHART
   var circleChart = function (){
@@ -165,23 +186,23 @@ $(function(){
           newHeight = maxHeight * ($(this).data('percent') / 100);
 
           // Only animate elements when using non-mobile devices
-          // if (jQuery.browser.mobile === false){
-          //     item.one('inview', function(isInView) {
-          //         if (isInView){
-          //             // Animate item
-          //             item.animate({
-          //                 height: newHeight
-          //             },1500);
-          //         }
-          //     });
-          // }
-          // else{
-          //     item.css('height', newHeight);
-          // }
+          if (jQuery.browser.mobile === false){
+              item.one('inview', function(isInView) {
+                  if (isInView){
+                      // Animate item
+                      item.animate({
+                          height: newHeight
+                      },1500);
+                  }
+              });
+          }
+          else{
+              item.css('height', newHeight);
+          }
       });
   };
 
-// Call circleChart() when window is loaded.
+  // Call circleChart() when window is loaded.
   $(window).smartload(function(){
       circleChart();
   });
