@@ -30,8 +30,8 @@ $(function(){
       $('#about-page').removeClass('show-section')
       $('#skills-page').addClass('hide-section')
       $('#skills-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#portfolio-page').addClass('hide-section')
+      $('#portfolio-page').removeClass('show-section')
 
 
 
@@ -47,8 +47,8 @@ $(function(){
       $('#about-page').removeClass('show-section')
       $('#skills-page').addClass('hide-section')
       $('#skills-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#portfolio-page').addClass('hide-section')
+      $('#portfolio-page').removeClass('show-section')
 
 
     });
@@ -63,8 +63,8 @@ $(function(){
       $('#contact-page').removeClass('show-section')
       $('#skills-page').addClass('hide-section')
       $('#skills-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#portfolio-page').addClass('hide-section')
+      $('#portfolio-page').removeClass('show-section')
 
     })
 
@@ -78,8 +78,22 @@ $(function(){
       $('#contact-page').removeClass('show-section')
       $('#about-page').addClass('hide-section')
       $('#about-page').removeClass('show-section')
-      // $('').addClass('hide-section')
-      // $('').removeClass('show-section')
+      $('#portfolio-page').addClass('hide-section')
+      $('#portfolio-page').removeClass('show-section')
+
+    })
+
+// On Click of PORTFOLIO
+    $('#portfolio-click').on('click', function() {
+      $('#portfolio-page').addClass('show-section')
+      $('#portfolio-page').removeClass('hide-section')
+      $('#home').css('display', 'none')
+      $('#contact-page').addClass('hide-section')
+      $('#contact-page').removeClass('show-section')
+      $('#skills-page').addClass('hide-section')
+      $('#skills-page').removeClass('show-section')
+      $('#about-page').addClass('hide-section')
+      $('#about-page').removeClass('show-section')
 
     })
 
