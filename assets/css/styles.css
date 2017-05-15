@@ -901,6 +901,9 @@ header.hero .hero-body .hero-text .page-scroll {
   z-index: 5;
   background-color: #171717;
 }
+.portfolio--row{
+  padding-bottom: 15px;
+}
 
 #portfolio .section-wrapper > .section-content {
   padding-bottom: 0px;
