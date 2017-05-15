@@ -912,7 +912,7 @@ header.hero .hero-body .hero-text .page-scroll {
 
 .portfolio .item {
   position: relative;
-  padding: 0px;
+/*   padding: 0px; */
   max-width: 100%;
 }
 
